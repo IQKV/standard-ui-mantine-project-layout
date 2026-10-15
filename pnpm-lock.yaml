@@ -21,8 +21,8 @@ importers:
         specifier: ^6.8.0
         version: 6.8.0
       '@lingui/react':
-        specifier: ^6.1.0
-        version: 6.6.0(@babel/core@7.29.7)(@babel/types@7.29.8)(react@19.2.8)
+        specifier: ^6.9.1
+        version: 6.9.1(@babel/core@7.29.7)(react@19.2.8)
       '@mantine/carousel':
         specifier: ^8.3.18
         version: 8.3.18(@mantine/core@8.3.18(@mantine/hooks@8.3.18(react@19.2.8))(@types/react@19.2.18)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@mantine/hooks@8.3.18(react@19.2.8))(embla-carousel-react@8.6.0(react@19.2.8))(embla-carousel@8.6.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
@@ -212,7 +212,7 @@ importers:
         version: 6.6.0(@lingui/core@6.8.0(@babel/core@7.29.7))(@swc/core@1.15.47)
       '@lingui/vite-plugin':
         specifier: ^6.7.0
-        version: 6.7.0(@babel/core@7.29.7)(@lingui/babel-plugin-lingui-macro@6.9.0(@babel/core@7.29.7))(rolldown@1.2.13)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0)(sugarss@5.0.1(postcss@8.5.26))(yaml@2.9.0))
+        version: 6.7.0(@babel/core@7.29.7)(@lingui/babel-plugin-lingui-macro@6.9.1(@babel/core@7.29.7))(rolldown@1.2.13)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0)(sugarss@5.0.1(postcss@8.5.26))(yaml@2.9.0))
       '@playwright/test':
         specifier: 1.62.1
         version: 1.62.1
@@ -1075,18 +1075,6 @@ packages:
     resolution: {integrity: sha512-udKlLtGtJ9TjVjqtogIage/Z3merz5Ko5u72uIaHMZ9aPFjSNDnrsglWEfMLWTeSxmkdOrASDpn8YuBMLbhvPA==}
     engines: {node: '>=22.19.0'}
 
-  '@lingui/babel-plugin-lingui-macro@6.6.0':
-    resolution: {integrity: sha512-FEBrnIx66lAeD9LGueRIen8IEj+aT7bDaMVmPNIITQNBCm2iC4mNcUtEV1/rAaVpfKKnh5uTdQowWmddB2D7iw==}
-    engines: {node: '>=22.19.0'}
-    peerDependencies:
-      '@babel/core': ^7.20.12 || ^8.0.0
-      '@babel/types': ^7.20.7 || ^8.0.0
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-      '@babel/types':
-        optional: true
-
   '@lingui/babel-plugin-lingui-macro@6.7.0':
     resolution: {integrity: sha512-YY0mxBP6RZ6sHJ0QymQClEsgNYQ46RGXGBpZUsL16cpALwFnC32nj45yfpIN+eYar+g3wT49ptrD45gylYUirA==}
     engines: {node: '>=22.19.0'}
@@ -1110,6 +1098,15 @@ packages:
 
   '@lingui/babel-plugin-lingui-macro@6.9.0':
     resolution: {integrity: sha512-AwbD2JKdy3L0Vppv5X8xPZJzgY4W9Y+DcH5Tzb7oZA6o96N+VVeJU9xsLFbh5UGIQAwLeY7BZKDH88qmWj1gUA==}
+    engines: {node: '>=22.19.0'}
+    peerDependencies:
+      '@babel/core': ^7.20.12 || ^8.0.0
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+
+  '@lingui/babel-plugin-lingui-macro@6.9.1':
+    resolution: {integrity: sha512-KhOXhdBoWbyCAb76r49+9QojBkWyMfFqD5PF9Irl0av4x0rGdxknm/bj3PzB8nx1tq2+b3mAgyQCJAMwdvY2Jg==}
     engines: {node: '>=22.19.0'}
     peerDependencies:
       '@babel/core': ^7.20.12 || ^8.0.0
@@ -1159,14 +1156,9 @@ packages:
     resolution: {integrity: sha512-1fwYejoGLeoy5P1/mop0WP35fDRXkB7fUFxyPV5E+vBbgOXtw+QDRt1y9WtyqjI+dz9zQtNYmND3+tBSeAADfw==}
     engines: {node: '>=22.19.0'}
 
-  '@lingui/core@6.6.0':
-    resolution: {integrity: sha512-vqL7LkU2iDAHcaHYzFGbdYovHLdHamG0Zh7r5F9O7C1J1sEPZSMQfkddk2FFeSZHy5j7Na7hzIGGJTZutgiZRg==}
+  '@lingui/conf@6.9.1':
+    resolution: {integrity: sha512-9kDH5v9AToFOemUzNrhDO9NjDngu0mvTUjdO4r9gSOUO7xydpKh0oL7itHGT2PKx1HIbpDXUJxkIzGZ7FcW2GQ==}
     engines: {node: '>=22.19.0'}
-    peerDependencies:
-      babel-plugin-macros: 2 || 3
-    peerDependenciesMeta:
-      babel-plugin-macros:
-        optional: true
 
   '@lingui/core@6.7.0':
     resolution: {integrity: sha512-dw6n4S/11ZQJZQZe85AMKOOU+q/D360H4NkWTBO6A597D+2FFkgdLQV89UCidTPyxiI7t5P4qrgcy4m53tQ/+g==}
@@ -1195,6 +1187,15 @@ packages:
       babel-plugin-macros:
         optional: true
 
+  '@lingui/core@6.9.1':
+    resolution: {integrity: sha512-/WsHqJMxx1ONTI9i8iWMJmWodZhV6GjS93JziTmot2x18fF2WlmVQBjDAzGLK3ZcX/2D/6SF7vv72MIJip3Jkg==}
+    engines: {node: '>=22.19.0'}
+    peerDependencies:
+      babel-plugin-macros: 2 || 3
+    peerDependenciesMeta:
+      babel-plugin-macros:
+        optional: true
+
   '@lingui/format-po@6.7.0':
     resolution: {integrity: sha512-lCVeoANXP9fCdEWXTg2quok4j49wgt1O4hdZMdR7ImoUTxdQP0p/QlpT20QecqghPPATeSNuFfzvtFPS2nr93g==}
     engines: {node: '>=22.19.0'}
@@ -1207,10 +1208,6 @@ packages:
     resolution: {integrity: sha512-nfeAxAj3An1zq0F8k01fvw+cMgqU4KAIDemylwNnTI+Mamo1x6WUo+vtpaJQjtDDTPBMVKkMoGx9G9fpy5xrtQ==}
     engines: {node: '>=22.19.0'}
 
-  '@lingui/message-utils@6.6.0':
-    resolution: {integrity: sha512-XkEcuMjIUjq7KZfTe83jP6UWQvKskpae/Ve7E8M8HEJ3TujHIPLzKn/quEmot6pKRtGwYxQzktGRfs2sPcZaqg==}
-    engines: {node: '>=22.19.0'}
-
   '@lingui/message-utils@6.7.0':
     resolution: {integrity: sha512-Rqxb/Hvq+3sWoPLdaJiNywsFNOcYiBSYBGJOrjyRCVbSUE4T9jviR05+vibmqyaABa1w+W0Pw/EhwV+gCSw4wQ==}
     engines: {node: '>=22.19.0'}
@@ -1221,6 +1218,10 @@ packages:
 
   '@lingui/message-utils@6.9.0':
     resolution: {integrity: sha512-LaFvx9Vc/lx4EPbbDaiDtyumDM4aAglRA3yvFQsJkhs1UWrCgDaaUBWhkXKYcmVe9gb7qeGYCqmGWOL84N9xDw==}
+    engines: {node: '>=22.19.0'}
+
+  '@lingui/message-utils@6.9.1':
+    resolution: {integrity: sha512-pEfdWUhZoNrE8+06KOsv1r8VTKkdRvaT0gcXVO/FEVfphGiszSMQtoNhv3ftFbet7HKen2xx0LrzJ93mx3zVAw==}
     engines: {node: '>=22.19.0'}
 
   '@lingui/native-tools-android-arm64@0.1.5':
@@ -1287,8 +1288,8 @@ packages:
     peerDependencies:
       '@lingui/conf': ^6.0.1
 
-  '@lingui/react@6.6.0':
-    resolution: {integrity: sha512-oRZvm8nx47wQB7Y4tQ4K78Ba0Ta0wJLRpT7125zW3J1wq++hMfc9XMqemCau2IDVtCMHGHdlLPiBeyFSIq/0Rw==}
+  '@lingui/react@6.9.1':
+    resolution: {integrity: sha512-mc0yX+unl9hLzpoYQZ4IsuhCdU0zTlUpZXqM9ElGS/SZTPA2BVV7CmcVpQ8hXm/GomGn2ewQRg2jNDkB+P/R6Q==}
     engines: {node: '>=22.19.0'}
     peerDependencies:
       babel-plugin-macros: 2 || 3
@@ -1425,6 +1426,9 @@ packages:
 
   '@messageformat/parser@5.1.1':
     resolution: {integrity: sha512-3p0YRGCcTUCYvBKLIxtDDyrJ0YijGIwrTRu1DT8gIviIDZru8H23+FkY6MJBzM1n9n20CiM4VeDYuBsrrwnLjg==}
+
+  '@messageformat/parser@5.2.0':
+    resolution: {integrity: sha512-sc3hNZ0JtC32GhL5nUgPbh2ilcwji4G+Vmj/vhMd8hZaH//NDOvkfwKK1mFnRWG5h2DpksN8xr/HB5/+vMg3iw==}
 
   '@microsoft/fetch-event-source@2.0.1':
     resolution: {integrity: sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA==}
@@ -7512,14 +7516,6 @@ snapshots:
     dependencies:
       '@lingui/conf': 6.9.0
 
-  '@lingui/babel-plugin-lingui-macro@6.6.0(@babel/core@7.29.7)(@babel/types@7.29.8)':
-    dependencies:
-      '@lingui/conf': 6.6.0
-      '@lingui/message-utils': 6.6.0
-    optionalDependencies:
-      '@babel/core': 7.29.7
-      '@babel/types': 7.29.8
-
   '@lingui/babel-plugin-lingui-macro@6.7.0(@babel/core@7.29.7)(@babel/types@7.29.8)':
     dependencies:
       '@lingui/conf': 6.7.0
@@ -7541,6 +7537,14 @@ snapshots:
       '@babel/types': 7.29.8
       '@lingui/conf': 6.9.0
       '@lingui/message-utils': 6.9.0
+    optionalDependencies:
+      '@babel/core': 7.29.7
+
+  '@lingui/babel-plugin-lingui-macro@6.9.1(@babel/core@7.29.7)':
+    dependencies:
+      '@babel/types': 7.29.8
+      '@lingui/conf': 6.9.1
+      '@lingui/message-utils': 6.9.1
     optionalDependencies:
       '@babel/core': 7.29.7
 
@@ -7631,13 +7635,12 @@ snapshots:
       lilconfig: 3.1.3
       normalize-path: 3.0.0
 
-  '@lingui/core@6.6.0(@babel/core@7.29.7)(@babel/types@7.29.8)':
+  '@lingui/conf@6.9.1':
     dependencies:
-      '@lingui/babel-plugin-lingui-macro': 6.6.0(@babel/core@7.29.7)(@babel/types@7.29.8)
-      '@lingui/message-utils': 6.6.0
-    transitivePeerDependencies:
-      - '@babel/core'
-      - '@babel/types'
+      jest-validate: 29.7.0
+      jiti: 2.7.0
+      lilconfig: 3.1.3
+      normalize-path: 3.0.0
 
   '@lingui/core@6.7.0(@babel/core@7.29.7)(@babel/types@7.29.8)':
     dependencies:
@@ -7661,6 +7664,13 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
 
+  '@lingui/core@6.9.1(@babel/core@7.29.7)':
+    dependencies:
+      '@lingui/babel-plugin-lingui-macro': 6.9.1(@babel/core@7.29.7)
+      '@lingui/message-utils': 6.9.1
+    transitivePeerDependencies:
+      - '@babel/core'
+
   '@lingui/format-po@6.7.0':
     dependencies:
       '@lingui/conf': 6.7.0
@@ -7679,12 +7689,6 @@ snapshots:
       '@lingui/message-utils': 6.9.0
       pofile-ts: 4.0.3
 
-  '@lingui/message-utils@6.6.0':
-    dependencies:
-      '@messageformat/date-skeleton': 1.1.0
-      '@messageformat/parser': 5.1.1
-      js-sha256: 0.10.1
-
   '@lingui/message-utils@6.7.0':
     dependencies:
       '@messageformat/date-skeleton': 1.1.0
@@ -7701,6 +7705,12 @@ snapshots:
     dependencies:
       '@messageformat/date-skeleton': 1.1.0
       '@messageformat/parser': 5.1.1
+      js-sha256: 0.10.1
+
+  '@lingui/message-utils@6.9.1':
+    dependencies:
+      '@messageformat/date-skeleton': 1.1.0
+      '@messageformat/parser': 5.2.0
       js-sha256: 0.10.1
 
   '@lingui/native-tools-android-arm64@0.1.5':
@@ -7745,15 +7755,14 @@ snapshots:
       '@lingui/native-tools-win32-arm64-msvc': 0.1.5
       '@lingui/native-tools-win32-x64-msvc': 0.1.5
 
-  '@lingui/react@6.6.0(@babel/core@7.29.7)(@babel/types@7.29.8)(react@19.2.8)':
+  '@lingui/react@6.9.1(@babel/core@7.29.7)(react@19.2.8)':
     dependencies:
-      '@lingui/babel-plugin-lingui-macro': 6.6.0(@babel/core@7.29.7)(@babel/types@7.29.8)
-      '@lingui/core': 6.6.0(@babel/core@7.29.7)(@babel/types@7.29.8)
+      '@lingui/babel-plugin-lingui-macro': 6.9.1(@babel/core@7.29.7)
+      '@lingui/core': 6.9.1(@babel/core@7.29.7)
       react: 19.2.8
-      use-sync-external-store: 1.6.0(react@19.2.8)
+      use-sync-external-store: 1.7.0(react@19.2.8)
     transitivePeerDependencies:
       - '@babel/core'
-      - '@babel/types'
 
   '@lingui/swc-plugin@6.6.0(@lingui/core@6.8.0(@babel/core@7.29.7))(@swc/core@1.15.47)':
     dependencies:
@@ -7762,14 +7771,14 @@ snapshots:
     optionalDependencies:
       '@swc/core': 1.15.47
 
-  '@lingui/vite-plugin@6.7.0(@babel/core@7.29.7)(@lingui/babel-plugin-lingui-macro@6.9.0(@babel/core@7.29.7))(rolldown@1.2.13)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0)(sugarss@5.0.1(postcss@8.5.26))(yaml@2.9.0))':
+  '@lingui/vite-plugin@6.7.0(@babel/core@7.29.7)(@lingui/babel-plugin-lingui-macro@6.9.1(@babel/core@7.29.7))(rolldown@1.2.13)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0)(sugarss@5.0.1(postcss@8.5.26))(yaml@2.9.0))':
     dependencies:
       '@lingui/cli': 6.7.0(rolldown@1.2.13)
       '@lingui/conf': 6.7.0
       vite: 8.3.4(@types/node@26.6.5)(jiti@2.7.0)(sugarss@5.0.1(postcss@8.5.26))(yaml@2.9.0)
     optionalDependencies:
       '@babel/core': 7.29.7
-      '@lingui/babel-plugin-lingui-macro': 6.9.0(@babel/core@7.29.7)
+      '@lingui/babel-plugin-lingui-macro': 6.9.1(@babel/core@7.29.7)
       rolldown: 1.2.13
     transitivePeerDependencies:
       - babel-plugin-macros
@@ -7875,6 +7884,10 @@ snapshots:
   '@messageformat/date-skeleton@1.1.0': {}
 
   '@messageformat/parser@5.1.1':
+    dependencies:
+      moo: 0.5.3
+
+  '@messageformat/parser@5.2.0':
     dependencies:
       moo: 0.5.3
 
@@ -8668,7 +8681,7 @@ snapshots:
     dependencies:
       '@tiptap/core': 3.31.3(@tiptap/pm@3.31.3)
 
-  '@tiptap/extension-dropcursor@3.31.3(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))':
+  '@tiptap/extension-dropcursor@3.31.3(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3))':
     dependencies:
       '@tiptap/extensions': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3)
 
@@ -8679,7 +8692,7 @@ snapshots:
       '@tiptap/pm': 3.29.2
     optional: true
 
-  '@tiptap/extension-gapcursor@3.31.3(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))':
+  '@tiptap/extension-gapcursor@3.31.3(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3))':
     dependencies:
       '@tiptap/extensions': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3)
 
@@ -8710,7 +8723,7 @@ snapshots:
       '@tiptap/pm': 3.29.2
       linkifyjs: 4.3.3
 
-  '@tiptap/extension-link@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3)':
+  '@tiptap/extension-link@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)':
     dependencies:
       '@tiptap/core': 3.31.3(@tiptap/pm@3.31.3)
       '@tiptap/pm': 3.31.3
@@ -8820,13 +8833,13 @@ snapshots:
       '@tiptap/extension-code': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
       '@tiptap/extension-code-block': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)
       '@tiptap/extension-document': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
-      '@tiptap/extension-dropcursor': 3.31.3(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))
-      '@tiptap/extension-gapcursor': 3.31.3(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.29.2))
+      '@tiptap/extension-dropcursor': 3.31.3(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3))
+      '@tiptap/extension-gapcursor': 3.31.3(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3))
       '@tiptap/extension-hard-break': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
       '@tiptap/extension-heading': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
       '@tiptap/extension-horizontal-rule': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)
       '@tiptap/extension-italic': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
-      '@tiptap/extension-link': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3)
+      '@tiptap/extension-link': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)
       '@tiptap/extension-list': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)
       '@tiptap/extension-list-item': 3.31.3(@tiptap/extension-list@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))
       '@tiptap/extension-list-keymap': 3.31.3(@tiptap/extension-list@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))
@@ -13042,7 +13055,7 @@ snapshots:
 
   zustand@4.5.7(@types/react@19.2.18)(immer@11.1.18)(react@19.2.8):
     dependencies:
-      use-sync-external-store: 1.6.0(react@19.2.8)
+      use-sync-external-store: 1.7.0(react@19.2.8)
     optionalDependencies:
       '@types/react': 19.2.18
       immer: 11.1.18
