@@ -15,8 +15,8 @@ importers:
         specifier: ^5.9.1
         version: 5.9.1(@sinclair/typebox@0.27.12)(@standard-schema/spec@1.1.0)(ajv@8.20.0)(react-hook-form@7.90.0(@types/react@19.2.18)(react@19.2.8))(zod@4.6.6)
       '@lingui/core':
-        specifier: ^6.8.0
-        version: 6.8.0(@babel/core@7.29.7)
+        specifier: ^6.9.1
+        version: 6.9.1(@babel/core@7.29.7)
       '@lingui/format-po':
         specifier: ^6.8.0
         version: 6.8.0
@@ -209,7 +209,7 @@ importers:
         version: 6.9.0(rolldown@1.2.13)
       '@lingui/swc-plugin':
         specifier: ^6.0.0
-        version: 6.6.0(@lingui/core@6.8.0(@babel/core@7.29.7))(@swc/core@1.15.47)
+        version: 6.6.0(@lingui/core@6.9.1(@babel/core@7.29.7))(@swc/core@1.15.47)
       '@lingui/vite-plugin':
         specifier: ^6.7.0
         version: 6.7.0(@babel/core@7.29.7)(@lingui/babel-plugin-lingui-macro@6.9.1(@babel/core@7.29.7))(rolldown@1.2.13)(vite@8.3.4(@types/node@26.6.5)(jiti@2.7.0)(sugarss@5.0.1(postcss@8.5.26))(yaml@2.9.0))
@@ -1087,15 +1087,6 @@ packages:
       '@babel/types':
         optional: true
 
-  '@lingui/babel-plugin-lingui-macro@6.8.0':
-    resolution: {integrity: sha512-/gecQy9KnOo7xTNtHB/DWmweXtV1xd9BFWSmHbIqxKo8k3zcBacyZ4Jt4+RVEJglJ4LvpANjF3fQH3YfHPoqvQ==}
-    engines: {node: '>=22.19.0'}
-    peerDependencies:
-      '@babel/core': ^7.20.12 || ^8.0.0
-    peerDependenciesMeta:
-      '@babel/core':
-        optional: true
-
   '@lingui/babel-plugin-lingui-macro@6.9.0':
     resolution: {integrity: sha512-AwbD2JKdy3L0Vppv5X8xPZJzgY4W9Y+DcH5Tzb7oZA6o96N+VVeJU9xsLFbh5UGIQAwLeY7BZKDH88qmWj1gUA==}
     engines: {node: '>=22.19.0'}
@@ -1162,15 +1153,6 @@ packages:
 
   '@lingui/core@6.7.0':
     resolution: {integrity: sha512-dw6n4S/11ZQJZQZe85AMKOOU+q/D360H4NkWTBO6A597D+2FFkgdLQV89UCidTPyxiI7t5P4qrgcy4m53tQ/+g==}
-    engines: {node: '>=22.19.0'}
-    peerDependencies:
-      babel-plugin-macros: 2 || 3
-    peerDependenciesMeta:
-      babel-plugin-macros:
-        optional: true
-
-  '@lingui/core@6.8.0':
-    resolution: {integrity: sha512-MRjinsq93RHw5QpgKHNnDDzCQR2D+XvR/At5QbaR852JozggWYL6+IWFunQgAvz5vI3jjBtDRp+kJufXOtXQFQ==}
     engines: {node: '>=22.19.0'}
     peerDependencies:
       babel-plugin-macros: 2 || 3
@@ -7528,14 +7510,6 @@ snapshots:
       '@babel/core': 7.29.7
       '@babel/types': 7.29.8
 
-  '@lingui/babel-plugin-lingui-macro@6.8.0(@babel/core@7.29.7)':
-    dependencies:
-      '@babel/types': 7.29.8
-      '@lingui/conf': 6.8.0
-      '@lingui/message-utils': 6.8.0
-    optionalDependencies:
-      '@babel/core': 7.29.7
-
   '@lingui/babel-plugin-lingui-macro@6.9.0(@babel/core@7.29.7)':
     dependencies:
       '@babel/types': 7.29.8
@@ -7654,13 +7628,6 @@ snapshots:
       - '@babel/core'
       - '@babel/types'
 
-  '@lingui/core@6.8.0(@babel/core@7.29.7)':
-    dependencies:
-      '@lingui/babel-plugin-lingui-macro': 6.8.0(@babel/core@7.29.7)
-      '@lingui/message-utils': 6.8.0
-    transitivePeerDependencies:
-      - '@babel/core'
-
   '@lingui/core@6.9.0(@babel/core@7.29.7)':
     dependencies:
       '@lingui/babel-plugin-lingui-macro': 6.9.0(@babel/core@7.29.7)
@@ -7696,7 +7663,7 @@ snapshots:
   '@lingui/message-utils@6.7.0':
     dependencies:
       '@messageformat/date-skeleton': 1.1.0
-      '@messageformat/parser': 5.1.1
+      '@messageformat/parser': 5.2.0
       js-sha256: 0.10.1
 
   '@lingui/message-utils@6.8.0':
@@ -7768,10 +7735,10 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
 
-  '@lingui/swc-plugin@6.6.0(@lingui/core@6.8.0(@babel/core@7.29.7))(@swc/core@1.15.47)':
+  '@lingui/swc-plugin@6.6.0(@lingui/core@6.9.1(@babel/core@7.29.7))(@swc/core@1.15.47)':
     dependencies:
       '@lingui/conf': 6.6.0
-      '@lingui/core': 6.8.0(@babel/core@7.29.7)
+      '@lingui/core': 6.9.1(@babel/core@7.29.7)
     optionalDependencies:
       '@swc/core': 1.15.47
 
@@ -8727,7 +8694,7 @@ snapshots:
       '@tiptap/pm': 3.29.2
       linkifyjs: 4.3.3
 
-  '@tiptap/extension-link@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)':
+  '@tiptap/extension-link@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3)':
     dependencies:
       '@tiptap/core': 3.31.3(@tiptap/pm@3.31.3)
       '@tiptap/pm': 3.31.3
@@ -8843,7 +8810,7 @@ snapshots:
       '@tiptap/extension-heading': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
       '@tiptap/extension-horizontal-rule': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)
       '@tiptap/extension-italic': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))
-      '@tiptap/extension-link': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)
+      '@tiptap/extension-link': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.29.2))(@tiptap/pm@3.31.3)
       '@tiptap/extension-list': 3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3)
       '@tiptap/extension-list-item': 3.31.3(@tiptap/extension-list@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))
       '@tiptap/extension-list-keymap': 3.31.3(@tiptap/extension-list@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))
